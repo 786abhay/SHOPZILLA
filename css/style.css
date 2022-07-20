@@ -1,0 +1,203 @@
+*{
+padding:0;
+margin:0;
+text-decoration:none;
+list-style:none;
+box-sizing:border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+body{
+overflow-x:hidden;
+font-family: 'Open Sans', sans-serif;
+}
+.container{
+max-width:1300px;
+margin:0 auto;
+padding:0 15px;
+}
+
+.bg img {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin: 00 auto;
+}
+.chec-basket {
+    overflow: hidden;
+    height: 44px;
+    box-sizing: border-box;
+    background-color: white;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 1234;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    background: url("../image/hologram.bg.png");
+    cursor: pointer;
+    transition: all .15s ease-in-out;
+    text-align: left;
+    font-size: 0;
+    animation-delay: 0s;
+}
+.chec-basket span.cart-icon {
+    display: inline-block;
+    width: 50px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+    text-align: center;
+}
+main.main-section {
+    padding: 50px;
+}
+
+.chec-basket span.cart-icon img {
+    position: relative;
+    width: 23px;
+    top: 12px;
+}
+.chec-basket span.item {
+    background: white;
+    color: #898699;
+    font-size: 13px;
+    line-height: 44px;
+    padding: 0 12px;
+    display: inline-block;
+    height: 100%;
+}
+.chec-basket span.subtotal {
+    color: #898699;
+    font-size: 13px;
+    line-height: 44px;
+    padding: 0 12px;
+    display: inline-block;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-image: linear-gradient(90deg,rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+}
+.heading {
+    margin: 40px 0;
+}
+h1.main-heading {
+    font-weight: 400;
+    font-size: 28px;
+    color: #6c7c90;
+    text-transform: uppercase;
+    text-align: center;
+}
+.input-btn input {
+    border-radius: 3px;
+    background: #FFFFFF;
+    border: 1px solid #bbc4d0;
+    width: 420px;
+    height: 45px;
+    color: #566373;
+    padding-left: 15px;
+    font-size: 12px;
+    font-family: Open Sans, Lucida Grande, Lucida Sans Unicode, Veranda, Arial, sans-serif;
+    font-weight: 400;
+    background-image: #fff;
+    border: 1px solid rgba(108, 124, 144, 0.25);
+    border-radius: 3px;
+    padding: 0 12px;
+    font-size: 12px;
+    height: 45px;
+    line-height: 45px;
+    transition: all .15s ease-in-out;
+}
+.input-btn {
+    text-align: center;
+}
+.chec-basket:hover {
+    box-shadow: 0 1px 40px 1px rgba(0, 0, 0, 0.15);
+}
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+.rate-list {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+.bg {
+    padding: 40px 10px 10px;
+    background: #f8fafa;
+	position:relative;
+}
+p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 100;
+}
+p.name {
+    color: #6c7c90;
+}
+p.rate{
+    color: #69b67c; 
+}
+section.list-item {
+    padding: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+a{
+	color:inherit;
+}
+.product-detail {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+}
+a.add i {
+    margin-right: 5px;
+}
+a.product {
+    padding: 15px;
+    text-align: center;
+border:1px solid #a5a5a5;
+    border-radius: 3px;
+    font-size: 14px;
+}
+.bg:hover .product-detail {
+    opacity: 1;
+}
+a.add {
+    padding: 15px;
+    text-align: center;
+    background: #69b67c;
+    color: white;
+}
+.on-hover {
+    display: none;
+}
+.bg:hover .on-hover {
+    display: block;
+}
+.bg:hover .on-hover {
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: #ccccccab;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+footer {
+    display: flex;
+    width: 100%;
+    margin-top: 5%;
+    padding: 20px;
+    font-size: 1em;
+    color: black;
+    background-color: rgba(219, 208, 208, 0.185);
+    justify-content: center;
+}

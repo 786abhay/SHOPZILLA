@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Shop Zilla</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,300italic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link href="/css/checkout.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/assets/flickity/flickity.min.css">
+  <script src="/js/vendor.js?1474665817" type="text/javascript"></script>
+  <script type="text/javascript" src="https://js.stripe.com/v3/"></script>
+  <script type="text/javascript" src="https://cdn.chec.io/v2/commerce.js"></script>
+  <script type="text/javascript" src="/js/spaces.js" defer></script>
+  <script type="text/javascript" src="/js/jquery.hideseek.min.js" defer></script>
+  <script src="/assets/flickity/flickity.pkgd.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.serializeJSON/2.7.2/jquery.serializejson.min.js"></script>
+  <script src="https://cdn.rawgit.com/mgalante/jquery.redirect/master/jquery.redirect.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.payment/1.4.1/jquery.payment.min.js"></script>
+  <script src="https://www.paypalobjects.com/js/external/apdg.js"></script>
+</head>
+
+<body>
+  <main class="main-section">
+    <div class="chec-basket">
+      <span class="cart-icon">
+        <img src="image/cart.white.png">
+      </span>
+      <span class="item">0-item</span>
+      <span class="subtotal">₹0.00</span>
+    </div>
+    <div class="container">
+      <div class="heading">
+        <h1 class="main-heading">shopzilla</h1>
+      </div>
+      <div class="input-btn">
+        <input id="search" name="search" style="margin-top:30px; border:1px solid rgba(108, 124, 144, 0.47);" placeholder="Search products..." type="text" data-list="#products" autocomplete="off">
+      </div>
+      <section class="list-item">
+        <div class="main-grid">
+          <div class="list-block-item">
+            <div class="bg">
+              <img src="image/img1.jpeg">
+              <div class="on-hover">
+                <div class="product-detail">
+                  <a class="product" href="#">Product Detail</a>
+                  <a class="add" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="rate-list">
+              <p class="name">Keyboard</p>
+              <p class="rate">₹7,000.00</p>
+            </div>
+
+
+
+          </div>
+          <div class="list-block-item">
+            <div class="bg">
+              <img src="image/img2.jpeg">
+              <div class="on-hover">
+                <div class="product-detail">
+                  <a class="product" href="#">Product Detail</a>
+                  <a class="add" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="rate-list">
+              <p class="name">Monitor</p>
+              <p class="rate">₹25,000.00</p>
+            </div>
+
+
+
+          </div>
+          <div class="list-block-item">
+            <div class="bg">
+              <img src="image/img3.jpg">
+              <div class="on-hover">
+                <div class="product-detail">
+                  <a class="product" href="#">Product Detail</a>
+                  <a class="add" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="rate-list">
+              <p class="name">Jacket</p>
+              <p class="rate">₹1,000.00</p>
+            </div>
+
+
+
+          </div>
+          <div class="list-block-item">
+            <div class="bg">
+              <img src="image/img4.png">
+              <div class="on-hover">
+                <div class="product-detail">
+                  <a class="product" href="#">Product Detail</a>
+                  <a class="add" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="rate-list">
+              <p class="name">Shoes</p>
+              <p class="rate">₹2,000.00</p>
+            </div>
+
+
+
+          </div>
+          <div class="list-block-item">
+            <div class="bg">
+              <img src="image/img5.jpg">
+              <div class="on-hover">
+                <div class="product-detail">
+                  <a class="product" href="#">Product Detail</a>
+                  <a class="add" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="rate-list">
+              <p class="name">Mobile Phone</p>
+              <p class="rate">₹50,000.00</p>
+            </div>
+
+
+
+          </div>
+          <div class="list-block-item">
+            <div class="bg">
+              <img src="image/img6.jpeg">
+              <div class="on-hover">
+                <div class="product-detail">
+                  <a class="product" href="#">Product Detail</a>
+                  <a class="add" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="rate-list">
+              <p class="name">Book</p>
+              <p class="rate">₹400.00</p>
+            </div>
+
+
+
+          </div>
+        </div>
+    </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <footer>
+      <div class="copyright">
+        &copy; Copyright 2022 SHOPZILLA.
+        <br>All rights reserved.
+      </div>
+    </footer>
+  </main>
+</body>
+
+</html>
