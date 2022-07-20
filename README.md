@@ -1,2 +1,2 @@
 # SHOPZILLA
-An E-Commerse Web Page Design
+An E-Commerce Web Page Design
